@@ -47,6 +47,7 @@ class Cli(CliBase):
 
     CLI_ERRORS_RE = [
         re.compile(r"error:", re.I),
+        re.compile(r"not allowed", re.I),
     ]
 
     NET_PASSWD_RE = re.compile(r"[\r\n]?password: $", re.I)
